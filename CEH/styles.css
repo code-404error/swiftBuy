@@ -1,0 +1,419 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #1D3557;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #264653;
+  color: #F1FAEE;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #F1FAEE;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #F1FAEE;
+}
+
+/* Nav styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #F1FAEE;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav ul li a:hover {
+  color: #A8DADC;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #264653;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Main Content */
+.heading1 {
+  padding: 1rem;
+}
+
+main.login_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.texts, .email {
+  max-width: 400px;
+  text-align: left;
+  width: 100%;
+}
+
+.texts h1 {
+  margin-bottom: 0.5rem;
+}
+
+.texts p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button.cont {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: #F1FAEE;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+button.cont:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #A8DADC;
+}
+
+/* Banner */
+.banner {
+  background-color: #264653;
+  color: #F1FAEE;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.product {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 220px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1D3557;
+}
+
+.price {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.price del {
+  color: gray;
+  margin-right: 5px;
+}
+
+.product button {
+  padding: 8px 16px;
+  background-color: #1D3557;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #457B9D;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    flex: 1 1 100%;
+  }
+}
+.FAQ {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.FAQ details {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.FAQ summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  list-style: none;
+  outline: none;
+  font-size: 1.1rem;
+  color: #264653;
+}
+
+.FAQ summary:hover {
+  color: #1D3557;
+}
+
+.FAQ p {
+  margin-top: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding-left: 1rem;
+}
+footer {
+  background-color: #264653;
+  color: #F1FAEE;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+/* carousel */
+.toppicks {
+  padding: 2rem 1rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.toppicks h2 {
+  margin-bottom: 1rem;
+  color: #264653;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+
+.carousel-item {
+  min-width: 250px;
+  margin: 0 10px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1D3557;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+#cart-count {
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+.product-search {
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.product-search input {
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.newsletter {
+  background-color: #f1f1f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.newsletter h2 {
+  margin-bottom: 0.5rem;
+  color: #264653;
+}
+
+.newsletter p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #1D3557;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #457B9D;
+}
+
+#newsletter-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: green;
+}

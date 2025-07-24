@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy premium fashion and lifestyle products at unbeatable prices.">
+<meta name="keywords" content="ecommerce, fashion, online store, nigeria, hoodie, puma, davido">
+<meta name="author" content="swiftBuy">
+
+    <title>Swift</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/56389e2195.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header>
+  <div class="container">
+    <div class="logo">
+      <h1>swiftBuy</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li>
+  <a href="#">
+    <i class="fa-solid fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </a>
+</li>
+        <li><a href="login.htm"><i class="fa-solid fa-user"></i></a></li>
+       <li><a href="#"><i class="fa-solid fa-shopping-bag"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-headset"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <!-- Main-->
+     <main>
+        <section class="banner">
+          <p>Your one-stop Online marketplace for great product</p>
+        </section>
+
+        <section class="product-search">
+  <input type="text" id="searchInput" placeholder="Search products...">
+</section>
+
+        <section class="products">
+          <article class="product">
+           <img src="images/essential_hoodie-removebg-preview.png" alt="Essential Hoodie">
+                 <h3>ESSENTIAL HOODIE</h3>
+             <p class="price"><del> &#8358;278,500</del></del>  &#8358;77,000</p>
+         <button class="add-to-cart" data-product="ESSENTIAL HOODIE">SHOP NOW</button>
+            </article>
+          <!-- Second Producte -->
+            <article class="product">
+                     <img src="images/davido_white-removebg-preview.png" alt="davido puma">
+             <h3>PUMA x DAVIDO</h3>
+             <p class="price"><del> &#8358;248,000</del>  &#8358;127,000</p>
+            <button class="add-to-cart" data-product="Puma x Davido">SHOP NOW</button>
+          </article>
+          <!-- Third Productio -->
+            <article class="product">
+             <img src="images/owl-removebg-preview.png" alt="Owl">
+             <h3>OWLETTE</h3>
+             <p class="price"><del> &#8358;348,000</del>  &#8358;227,000</p>
+            <button class="add-to-cart" data-product="Owl">SHOP NOW</button>
+          </article>
+          <!-- Fourth Product -->
+            <article class="product">
+             <img src="images/zttw-removebg-preview.png" alt="ZZTW">
+             <h3>ZZTW</h3>
+             <p class="price"><del> &#8358;148,000</del>  &#8358;110,000</p>
+           <button class="add-to-cart" data-product="ZZTW">SHOP NOW</button>
+          </article>
+        </section>
+     </main>
+
+     <!-- CAROUSEL  -->
+   <div class="toppicks">
+  <h2>Top Picks</h2>
+  <div class="carousel">
+    <button class="carousel-btn left">&#10094;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-item">
+                  <img src="images/essential_hoodie-removebg-preview.png" alt="Essential Hoodie">
+        <p>Essential Hoodie</p>
+      </div>
+      <div class="carousel-item">
+            <img src="images/davido_white-removebg-preview.png" alt="davido puma">
+        <p>Puma x Davido</p>
+      </div>
+      <div class="carousel-item">
+          <img src="images/owl-removebg-preview.png" alt="Owl">
+        <p>Owlette</p>
+      </div>
+      <div class="carousel-item">
+        <img src="images/zttw-removebg-preview.png" alt="ZZTW">
+        <p>ZZTW</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn right">&#10095;</button>
+  </div>
+</div>
+
+
+     <!-- FAQ QUESTIONS -->
+      <div class="FAQ">
+         <details>
+            <summary>What payment method do you accept?</summary>
+            <p>We accept debit/credits card,bank transfers, and mobile payment</p>
+         </details>
+          <details>
+            <summary>Do you offer free shipping?</summary>
+            <p>Yes! We offer free shipping on orders over #50,000</p>
+         </details>
+          <details>
+            <summary>Can i track my order</summary>
+            Yes, you'll recieve a tracking link by email once your order is shipped
+         </details>
+          <details>
+            <summary>Do you have online physical store?</summary>
+            <p>We are online-only store for now.Shop anywhere,anytime!</p>
+         </details>
+      </div>
+
+     <section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Get updates on discounts, new products & exclusive offers.</p>
+  <form id="newsletter-form">
+    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <p id="newsletter-message"></p>
+</section>
+
+
+     <!-- Our Information -->
+      <footer>
+        <p>&copy; 2025 swiftBuy, All rights reserved.</p>
+        <p>Customer Support: +2349058029115</p>
+      </footer>
+
+      
+      <script src="script.js"></script>
+</body>
+</html>

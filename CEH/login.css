@@ -1,0 +1,65 @@
+
+body{
+   margin: 0;
+   background-color:#F1FAEE;
+   color: #1D3557;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   cursor:inherit;
+}
+/* Header & Nav Styling */
+header{
+    background-color: #264653;
+    color: #F1FAEE;
+    gap: 10px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    margin: 0;
+    margin: 0;
+}
+nav a{
+    text-decoration: none;
+    color: #F1FAEE;
+}
+a:hover{
+    cursor: pointer;
+}
+a:active{
+    color: gray;
+}
+/* Main Section Styling */
+main{
+    padding-top: 80px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: 0.5px solid #264653;
+}
+input::placeholder{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+button{
+       width: 270px;
+       height: 30px;
+       margin: 5px;
+}
+.acct{
+    background-color:#F1FAEE;
+    color: black;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
